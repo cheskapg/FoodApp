@@ -18,6 +18,8 @@ namespace FoodApp.Forms
 
         private void FrmOrderList_Load(object sender, EventArgs e)
         {
+            dgCustomerOrders.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dgCustomerOrders.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             LoadCustomerList();
         }
         internal void LoadCustomerList()

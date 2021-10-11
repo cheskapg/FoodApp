@@ -29,6 +29,7 @@ namespace FoodApp.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgCustomerOrders = new System.Windows.Forms.DataGridView();
             this.colOrderId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,11 +49,19 @@ namespace FoodApp.Forms
             this.panel1.Controls.Add(this.dgCustomerOrders);
             this.panel1.Location = new System.Drawing.Point(6, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1018, 478);
+            this.panel1.Size = new System.Drawing.Size(1043, 478);
             this.panel1.TabIndex = 0;
             // 
             // dgCustomerOrders
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgCustomerOrders.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgCustomerOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgCustomerOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colOrderId,
@@ -63,14 +72,14 @@ namespace FoodApp.Forms
             this.colContactNo,
             this.colPaymentMethod,
             this.colOrderList});
-            this.dgCustomerOrders.Location = new System.Drawing.Point(6, 8);
+            this.dgCustomerOrders.Location = new System.Drawing.Point(9, 8);
             this.dgCustomerOrders.Name = "dgCustomerOrders";
             this.dgCustomerOrders.ReadOnly = true;
             this.dgCustomerOrders.RowHeadersVisible = false;
             this.dgCustomerOrders.RowHeadersWidth = 51;
             this.dgCustomerOrders.RowTemplate.Height = 29;
             this.dgCustomerOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgCustomerOrders.Size = new System.Drawing.Size(1004, 385);
+            this.dgCustomerOrders.Size = new System.Drawing.Size(1022, 433);
             this.dgCustomerOrders.TabIndex = 0;
             // 
             // colOrderId
@@ -141,7 +150,7 @@ namespace FoodApp.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 494);
+            this.ClientSize = new System.Drawing.Size(1051, 494);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
