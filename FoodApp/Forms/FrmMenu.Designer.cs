@@ -39,7 +39,7 @@ namespace FoodApp
             this.ctgPizzaIcon = new System.Windows.Forms.PictureBox();
             this.pnlPizza = new System.Windows.Forms.Panel();
             this.cmbQuantityHam = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBacktoMenu = new System.Windows.Forms.Button();
             this.btnPepperonia = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -60,6 +60,7 @@ namespace FoodApp
             this.label3 = new System.Windows.Forms.Label();
             this.btnHamNCheese = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.cmbQuantityMexican = new System.Windows.Forms.ComboBox();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ctgMilkteaIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctgPizzaIcon)).BeginInit();
@@ -144,8 +145,9 @@ namespace FoodApp
             // pnlPizza
             // 
             this.pnlPizza.BackColor = System.Drawing.Color.DarkOrange;
+            this.pnlPizza.Controls.Add(this.cmbQuantityMexican);
             this.pnlPizza.Controls.Add(this.cmbQuantityHam);
-            this.pnlPizza.Controls.Add(this.button1);
+            this.pnlPizza.Controls.Add(this.btnBacktoMenu);
             this.pnlPizza.Controls.Add(this.btnPepperonia);
             this.pnlPizza.Controls.Add(this.label7);
             this.pnlPizza.Controls.Add(this.pictureBox4);
@@ -186,15 +188,15 @@ namespace FoodApp
             this.cmbQuantityHam.Size = new System.Drawing.Size(85, 28);
             this.cmbQuantityHam.TabIndex = 21;
             // 
-            // button1
+            // btnBacktoMenu
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.Location = new System.Drawing.Point(462, 467);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 39);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Back to Menu";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBacktoMenu.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnBacktoMenu.Location = new System.Drawing.Point(462, 453);
+            this.btnBacktoMenu.Name = "btnBacktoMenu";
+            this.btnBacktoMenu.Size = new System.Drawing.Size(108, 39);
+            this.btnBacktoMenu.TabIndex = 20;
+            this.btnBacktoMenu.Text = "Back to Menu";
+            this.btnBacktoMenu.UseVisualStyleBackColor = true;
             // 
             // btnPepperonia
             // 
@@ -341,6 +343,7 @@ namespace FoodApp
             this.btnMexicano.TabIndex = 4;
             this.btnMexicano.Text = "Add to Cart";
             this.btnMexicano.UseVisualStyleBackColor = true;
+            this.btnMexicano.Click += new System.EventHandler(this.btnMexicano_Click);
             // 
             // pictureBox1
             // 
@@ -378,6 +381,21 @@ namespace FoodApp
             this.pictureBox2.Size = new System.Drawing.Size(100, 105);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            // 
+            // cmbQuantityMexican
+            // 
+            this.cmbQuantityMexican.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbQuantityMexican.FormattingEnabled = true;
+            this.cmbQuantityMexican.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbQuantityMexican.Location = new System.Drawing.Point(366, 100);
+            this.cmbQuantityMexican.Name = "cmbQuantityMexican";
+            this.cmbQuantityMexican.Size = new System.Drawing.Size(85, 28);
+            this.cmbQuantityMexican.TabIndex = 22;
             // 
             // FrmMenu
             // 
@@ -438,7 +456,8 @@ namespace FoodApp
         private System.Windows.Forms.Button btnGehalo;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBacktoMenu;
         private System.Windows.Forms.ComboBox cmbQuantityHam;
+        private System.Windows.Forms.ComboBox cmbQuantityMexican;
     }
 }

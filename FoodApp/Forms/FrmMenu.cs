@@ -26,6 +26,17 @@ namespace FoodApp
 
         }
 
+        private void btnMexicano_Click(object sender, EventArgs e)
+        {
+            PizzaName = "Mexicano";
+            qtyPizza += "qty: " + cmbQuantityMexican.SelectedItem + "-" + PizzaName + "\n";
+
+            int id = 16;
+
+            string save = Model.Customer.InsertOrderList(id, qtyPizza);
+            MessageBox.Show(save);
+        }
+
         private void btnPizzactg_Click(object sender, EventArgs e)
         {
             pnlPizza.Show();
@@ -37,7 +48,7 @@ namespace FoodApp
         private void btnHamNCheese_Click(object sender, EventArgs e)
         {
             PizzaName = "HamNCheese";
-            qtyPizza = "qty" + cmbQuantityHam.SelectedItem + " "+ PizzaName;
+            qtyPizza = "qty: " + cmbQuantityHam.SelectedItem + "-"+ PizzaName + "\n";
             
             int id = 16;
 
