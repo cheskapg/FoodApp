@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodApp.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,7 +32,8 @@ namespace FoodApp
 
         private void btnOrderList_Click(object sender, EventArgs e)
         {
-
+            FrmOrderList frmOrderList = new FrmOrderList();
+            frmOrderList.Show();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
