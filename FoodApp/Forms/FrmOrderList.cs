@@ -13,7 +13,9 @@ namespace FoodApp.Forms
     {
         public FrmOrderList()
         {
+
             InitializeComponent();
+
         }
 
         private void FrmOrderList_Load(object sender, EventArgs e)
@@ -22,6 +24,7 @@ namespace FoodApp.Forms
             dgCustomerOrders.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             LoadCustomerList();
         }
+
         internal void LoadCustomerList()
         {
             var customer = Customer.GetCustomerOrder();
@@ -40,6 +43,14 @@ namespace FoodApp.Forms
                     );
             }
         }
-
+  
+           
     }
 }
+
+
+    
+
+
+
+

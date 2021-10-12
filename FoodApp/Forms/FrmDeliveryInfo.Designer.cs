@@ -492,7 +492,6 @@ namespace FoodApp
         private System.Windows.Forms.ComboBox cmbPaymentMethodList;
         private System.Windows.Forms.ComboBox cmbBarangayList;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label txtOrderList;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
