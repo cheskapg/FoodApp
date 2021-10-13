@@ -33,6 +33,8 @@ namespace FoodApp
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDeliveryInfo));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblAccNo = new System.Windows.Forms.Label();
+            this.txtAccNo = new System.Windows.Forms.TextBox();
             this.txtOrderList = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.txtContactNo = new System.Windows.Forms.TextBox();
@@ -76,6 +78,8 @@ namespace FoodApp
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel1.Controls.Add(this.lblAccNo);
+            this.panel1.Controls.Add(this.txtAccNo);
             this.panel1.Controls.Add(this.txtOrderList);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.txtContactNo);
@@ -98,6 +102,25 @@ namespace FoodApp
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(547, 483);
             this.panel1.TabIndex = 1;
+            // 
+            // lblAccNo
+            // 
+            this.lblAccNo.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAccNo.Location = new System.Drawing.Point(10, 390);
+            this.lblAccNo.Name = "lblAccNo";
+            this.lblAccNo.Size = new System.Drawing.Size(145, 44);
+            this.lblAccNo.TabIndex = 22;
+            this.lblAccNo.Text = "Account Number";
+            this.lblAccNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblAccNo.Visible = false;
+            // 
+            // txtAccNo
+            // 
+            this.txtAccNo.Location = new System.Drawing.Point(156, 397);
+            this.txtAccNo.Name = "txtAccNo";
+            this.txtAccNo.Size = new System.Drawing.Size(349, 27);
+            this.txtAccNo.TabIndex = 21;
+            this.txtAccNo.Visible = false;
             // 
             // txtOrderList
             // 
@@ -159,10 +182,11 @@ namespace FoodApp
             "GCASH",
             "CASH ON DELIVERY",
             "CREDIT CARD"});
-            this.cmbPaymentMethodList.Location = new System.Drawing.Point(156, 384);
+            this.cmbPaymentMethodList.Location = new System.Drawing.Point(156, 363);
             this.cmbPaymentMethodList.Name = "cmbPaymentMethodList";
             this.cmbPaymentMethodList.Size = new System.Drawing.Size(349, 28);
             this.cmbPaymentMethodList.TabIndex = 15;
+            this.cmbPaymentMethodList.SelectedIndexChanged += new System.EventHandler(this.cmbPaymentMethodGcashCC);
             // 
             // cmbBarangayList
             // 
@@ -358,7 +382,7 @@ namespace FoodApp
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(10, 375);
+            this.label5.Location = new System.Drawing.Point(10, 354);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(140, 44);
             this.label5.TabIndex = 13;
@@ -499,5 +523,7 @@ namespace FoodApp
         private System.Windows.Forms.ErrorProvider errorProvider4;
         private System.Windows.Forms.ErrorProvider errorProvider5;
         private System.Windows.Forms.ErrorProvider errorProvider6;
+        private System.Windows.Forms.Label lblAccNo;
+        private System.Windows.Forms.TextBox txtAccNo;
     }
 }

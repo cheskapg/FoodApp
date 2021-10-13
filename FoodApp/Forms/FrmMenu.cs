@@ -72,13 +72,21 @@ namespace FoodApp
             {
                 string OrderError = "Please Select Customer from List";
                 MessageBox.Show(OrderError);
+                cmbOrderID.Focus();
             }
             else
             {
-                string orderPlaced = "Your Order Has been Placed \n      Thank You";
+                string orderPlaced = "Your Order Has been Placed \n        Thank You";
                 MessageBox.Show(orderPlaced);
             }
         }
+
+        private void btnBackToMain_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
 
 
 
@@ -94,6 +102,8 @@ namespace FoodApp
             {
                 string OrderError = "Please Select Customer from List";
                 MessageBox.Show(OrderError);
+                cmbOrderID.Focus();
+
             }
             else
             {
@@ -101,7 +111,6 @@ namespace FoodApp
                 MessageBox.Show(save);
             }
         }
-
         private void btnHamNCheese_Click(object sender, EventArgs e)
         {
             PizzaName = "HamNCheese";
@@ -110,6 +119,8 @@ namespace FoodApp
             {
                 string OrderError = "Please Select Customer from List";
                 MessageBox.Show(OrderError);
+                cmbOrderID.Focus();
+
             }
             else
             {
@@ -117,8 +128,6 @@ namespace FoodApp
                 MessageBox.Show(save);
             }
         }
-
-
         private void btnGehalo_Click(object sender, EventArgs e)
         {
             PizzaName = "Gehalo";
@@ -127,6 +136,8 @@ namespace FoodApp
             {
                 string OrderError = "Please Select Customer from List";
                 MessageBox.Show(OrderError);
+                cmbOrderID.Focus();
+
             }
             else
             {
@@ -134,7 +145,6 @@ namespace FoodApp
                 MessageBox.Show(save);
             }
         }
-
         private void btnMargherita_Click(object sender, EventArgs e)
         {
             PizzaName = "Margherita";
@@ -143,6 +153,8 @@ namespace FoodApp
             {
                 string OrderError = "Please Select Customer from List";
                 MessageBox.Show(OrderError);
+                cmbOrderID.Focus();
+
             }
             else
             {
@@ -156,9 +168,17 @@ namespace FoodApp
         private void ClearCart()
         {
             cmbQuantityHam.ResetText();
-            cmbQuantityMexican.ResetText();
+            cmbQuantityHam.SelectedIndex = -1;
             cmbQuantityGehalo.ResetText();
-            
+            cmbQuantityGehalo.SelectedIndex = -1;
+            cmbQuantityMexican.ResetText();
+            cmbQuantityMexican.SelectedIndex = -1;
+            cmbQuantityMargherita.ResetText();
+            cmbQuantityMargherita.SelectedIndex = -1;
+            cmbOrderID.Focus();
+
+
+
 
         }
     }

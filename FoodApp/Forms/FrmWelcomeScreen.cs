@@ -23,11 +23,11 @@ namespace FoodApp
             FrmMenu frmMenu = new FrmMenu();
             frmMenu.Show();
         }
-
+            
         private void btnDeliveryInfo_Click(object sender, EventArgs e)
         {
             FrmDeliveryInfo frmDeliveryInfo = new FrmDeliveryInfo();
-            frmDeliveryInfo.ShowDialog();
+            frmDeliveryInfo.Show();
         }
 
         private void btnOrderList_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace FoodApp
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

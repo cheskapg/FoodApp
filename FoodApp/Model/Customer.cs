@@ -19,7 +19,7 @@ namespace FoodApp.Model
         public string OrderList { get; set; }
 
 
-        public static string InsertDeliveryInfo(string Firstname, string Lastname, string Barangay, string StreetAddress, int ContactNo, string PaymentMethod, string OrderList)
+        public static string InsertDeliveryInfo(string Firstname, string Lastname, string Barangay, string StreetAddress, string ContactNo, string PaymentMethod, string OrderList)
         {
             var client = new RestClient("https://nacho.cheez/FoodApp/insert/InsertDeliveryInfo.php");
             client.Timeout = -1;

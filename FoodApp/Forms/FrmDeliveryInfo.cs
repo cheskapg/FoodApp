@@ -27,11 +27,22 @@ namespace FoodApp
         private void btnSaveDeliveryInfo_Click(object sender, EventArgs e)
         {
             
-            string save = Model.Customer.InsertDeliveryInfo(txtFirstName.Text, txtLastName.Text, cmbBarangayList.Text, txtStreetAddress.Text, Convert.ToInt32(txtContactNo.Text), cmbPaymentMethodList.Text, txtOrderList.Text);
+            string save = Model.Customer.InsertDeliveryInfo(txtFirstName.Text, txtLastName.Text, cmbBarangayList.Text, txtStreetAddress.Text, txtContactNo.Text, cmbPaymentMethodList.Text, txtOrderList.Text);
+            DialogResult dialogResult = MessageBox.Show(save);
+            
+            if (dialogResult == DialogResult.OK) ;
+            {
+                this.Close();
+                FrmMenu frmMenu = new FrmMenu();
+                frmMenu.Show();
+            }
 
 
-            MessageBox.Show(save);
-            CancelClear();
+
+
+
+
+
 
 
         }
@@ -141,6 +152,24 @@ namespace FoodApp
         private void FrmDeliveryInfo_Load(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void cmbPaymentMethodGcashCC(object sender, EventArgs e)
+        {
+            string gcash = "GCASH";
+            string cc = "CREDIT CARD";
+
+            if ((string)cmbPaymentMethodList.SelectedItem == gcash ||(string)cmbPaymentMethodList.SelectedItem == cc) 
+            {
+                txtAccNo.Show();
+                lblAccNo.Show();
+
+            }
+            else
+            {
+                txtAccNo.Hide();
+            }
         }
     }
 }

@@ -31,6 +31,7 @@ namespace FoodApp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnBackToMain = new System.Windows.Forms.Button();
             this.l = new System.Windows.Forms.Label();
             this.btnMilkteactg = new System.Windows.Forms.Button();
             this.ctgMilkteaIcon = new System.Windows.Forms.PictureBox();
@@ -38,6 +39,10 @@ namespace FoodApp
             this.btnPizzactg = new System.Windows.Forms.Button();
             this.ctgPizzaIcon = new System.Windows.Forms.PictureBox();
             this.pnlPizza = new System.Windows.Forms.Panel();
+            this.cmbQuantityMargherita = new System.Windows.Forms.ComboBox();
+            this.cmbQuantityGehalo = new System.Windows.Forms.ComboBox();
+            this.btnCancelOrder = new System.Windows.Forms.Button();
+            this.btnPlaceOrder = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.cmbOrderID = new System.Windows.Forms.ComboBox();
             this.cmbQuantityMexican = new System.Windows.Forms.ComboBox();
@@ -57,10 +62,6 @@ namespace FoodApp
             this.label3 = new System.Windows.Forms.Label();
             this.btnHamNCheese = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnPlaceOrder = new System.Windows.Forms.Button();
-            this.btnCancelOrder = new System.Windows.Forms.Button();
-            this.cmbQuantityGehalo = new System.Windows.Forms.ComboBox();
-            this.cmbQuantityMargherita = new System.Windows.Forms.ComboBox();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ctgMilkteaIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctgPizzaIcon)).BeginInit();
@@ -74,6 +75,7 @@ namespace FoodApp
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.DarkOrange;
+            this.pnlMenu.Controls.Add(this.btnBackToMain);
             this.pnlMenu.Controls.Add(this.l);
             this.pnlMenu.Controls.Add(this.btnMilkteactg);
             this.pnlMenu.Controls.Add(this.ctgMilkteaIcon);
@@ -84,6 +86,16 @@ namespace FoodApp
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(633, 522);
             this.pnlMenu.TabIndex = 1;
+            // 
+            // btnBackToMain
+            // 
+            this.btnBackToMain.Location = new System.Drawing.Point(418, 457);
+            this.btnBackToMain.Name = "btnBackToMain";
+            this.btnBackToMain.Size = new System.Drawing.Size(168, 44);
+            this.btnBackToMain.TabIndex = 6;
+            this.btnBackToMain.Text = "Back to Main Winow";
+            this.btnBackToMain.UseVisualStyleBackColor = true;
+            this.btnBackToMain.Click += new System.EventHandler(this.btnBackToMain_Click);
             // 
             // l
             // 
@@ -170,6 +182,57 @@ namespace FoodApp
             this.pnlPizza.Name = "pnlPizza";
             this.pnlPizza.Size = new System.Drawing.Size(612, 516);
             this.pnlPizza.TabIndex = 6;
+            // 
+            // cmbQuantityMargherita
+            // 
+            this.cmbQuantityMargherita.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbQuantityMargherita.FormattingEnabled = true;
+            this.cmbQuantityMargherita.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbQuantityMargherita.Location = new System.Drawing.Point(490, 296);
+            this.cmbQuantityMargherita.Name = "cmbQuantityMargherita";
+            this.cmbQuantityMargherita.Size = new System.Drawing.Size(85, 28);
+            this.cmbQuantityMargherita.TabIndex = 28;
+            // 
+            // cmbQuantityGehalo
+            // 
+            this.cmbQuantityGehalo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbQuantityGehalo.FormattingEnabled = true;
+            this.cmbQuantityGehalo.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbQuantityGehalo.Location = new System.Drawing.Point(233, 296);
+            this.cmbQuantityGehalo.Name = "cmbQuantityGehalo";
+            this.cmbQuantityGehalo.Size = new System.Drawing.Size(85, 28);
+            this.cmbQuantityGehalo.TabIndex = 27;
+            // 
+            // btnCancelOrder
+            // 
+            this.btnCancelOrder.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCancelOrder.Location = new System.Drawing.Point(12, 454);
+            this.btnCancelOrder.Name = "btnCancelOrder";
+            this.btnCancelOrder.Size = new System.Drawing.Size(113, 49);
+            this.btnCancelOrder.TabIndex = 26;
+            this.btnCancelOrder.Text = "Clear Cart";
+            this.btnCancelOrder.UseVisualStyleBackColor = true;
+            this.btnCancelOrder.Click += new System.EventHandler(this.btnCancelOrder_Click);
+            // 
+            // btnPlaceOrder
+            // 
+            this.btnPlaceOrder.Location = new System.Drawing.Point(253, 454);
+            this.btnPlaceOrder.Name = "btnPlaceOrder";
+            this.btnPlaceOrder.Size = new System.Drawing.Size(109, 49);
+            this.btnPlaceOrder.TabIndex = 25;
+            this.btnPlaceOrder.Text = "Place Order";
+            this.btnPlaceOrder.UseVisualStyleBackColor = true;
+            this.btnPlaceOrder.Click += new System.EventHandler(this.btnPlaceOrder_Click);
             // 
             // label10
             // 
@@ -365,64 +428,13 @@ namespace FoodApp
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // btnPlaceOrder
-            // 
-            this.btnPlaceOrder.Location = new System.Drawing.Point(253, 454);
-            this.btnPlaceOrder.Name = "btnPlaceOrder";
-            this.btnPlaceOrder.Size = new System.Drawing.Size(109, 49);
-            this.btnPlaceOrder.TabIndex = 25;
-            this.btnPlaceOrder.Text = "Place Order";
-            this.btnPlaceOrder.UseVisualStyleBackColor = true;
-            this.btnPlaceOrder.Click += new System.EventHandler(this.btnPlaceOrder_Click);
-            // 
-            // btnCancelOrder
-            // 
-            this.btnCancelOrder.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCancelOrder.Location = new System.Drawing.Point(12, 454);
-            this.btnCancelOrder.Name = "btnCancelOrder";
-            this.btnCancelOrder.Size = new System.Drawing.Size(113, 49);
-            this.btnCancelOrder.TabIndex = 26;
-            this.btnCancelOrder.Text = "Clear Cart";
-            this.btnCancelOrder.UseVisualStyleBackColor = true;
-            this.btnCancelOrder.Click += new System.EventHandler(this.btnCancelOrder_Click);
-            // 
-            // cmbQuantityGehalo
-            // 
-            this.cmbQuantityGehalo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbQuantityGehalo.FormattingEnabled = true;
-            this.cmbQuantityGehalo.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbQuantityGehalo.Location = new System.Drawing.Point(233, 296);
-            this.cmbQuantityGehalo.Name = "cmbQuantityGehalo";
-            this.cmbQuantityGehalo.Size = new System.Drawing.Size(85, 28);
-            this.cmbQuantityGehalo.TabIndex = 27;
-            // 
-            // cmbQuantityMargherita
-            // 
-            this.cmbQuantityMargherita.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbQuantityMargherita.FormattingEnabled = true;
-            this.cmbQuantityMargherita.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.cmbQuantityMargherita.Location = new System.Drawing.Point(490, 296);
-            this.cmbQuantityMargherita.Name = "cmbQuantityMargherita";
-            this.cmbQuantityMargherita.Size = new System.Drawing.Size(85, 28);
-            this.cmbQuantityMargherita.TabIndex = 28;
-            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 520);
-            this.Controls.Add(this.pnlPizza);
             this.Controls.Add(this.pnlMenu);
+            this.Controls.Add(this.pnlPizza);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMenu";
@@ -476,5 +488,6 @@ namespace FoodApp
         private System.Windows.Forms.Button btnPlaceOrder;
         private System.Windows.Forms.ComboBox cmbQuantityMargherita;
         private System.Windows.Forms.ComboBox cmbQuantityGehalo;
+        private System.Windows.Forms.Button btnBackToMain;
     }
 }
