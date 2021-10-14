@@ -5,14 +5,19 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using FoodApp.Model;
 
 namespace FoodApp
 {
     public partial class FrmDeliveryInfo : Form
     {
+        public static string paymentmethod, gcash = "GCASH", cc = "CREDIT CARD";
+  
         public FrmDeliveryInfo()
         {
             InitializeComponent();
+
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -21,17 +26,47 @@ namespace FoodApp
             this.Close();
 
         }
+/*
+        private void cmbPaymentMethodFormat(object sender, ListControlConvertEventArgs e)
+        {
+            if ((string)cmbPaymentMethodList.SelectedItem == gcash || (string)cmbPaymentMethodList.SelectedItem == cc)
+            {
 
+                paymentmethod = ((PaymentMethod)e.ListItem).paymentAcc;
 
+                e.Value = paymentmethod + " Account No: " + txtAccNo.Text;
+            }
+        }*/
 
         private void btnSaveDeliveryInfo_Click(object sender, EventArgs e)
         {
-            
-            string save = Model.Customer.InsertDeliveryInfo(txtFirstName.Text, txtLastName.Text, cmbBarangayList.Text, txtStreetAddress.Text, Convert.ToInt32(txtContactNo.Text), cmbPaymentMethodList.Text, txtOrderList.Text);
+            if ((string)cmbPaymentMethodList.SelectedItem == gcash )
+            {
+                
+                paymentmethod = "Method " + gcash+ " Account No: " + txtAccNo.Text;
+                cmbPaymentMethodList.Text = paymentmethod;
+            }
+            else if ((string)cmbPaymentMethodList.SelectedItem == cc)
+            {
+                paymentmethod = "Method " + cc + " Account No: " + txtAccNo.Text;
+                cmbPaymentMethodList.Text = paymentmethod;
+            }
+            else
+            {
+                cmbPaymentMethodList.Text = paymentmethod;
+                paymentmethod = cmbPaymentMethodList.Text;
+            }
 
+            string save = Model.Customer.InsertDeliveryInfo(txtFirstName.Text, txtLastName.Text, cmbBarangayList.Text, txtStreetAddress.Text, txtContactNo.Text , paymentmethod, txtOrderList.Text);
+            DialogResult dialogResult = MessageBox.Show(save);
 
-            MessageBox.Show(save);
-            CancelClear();
+           
+                if (dialogResult == DialogResult.OK)
+            {
+                this.Close();
+                FrmMenu frmMenu = new FrmMenu();
+                frmMenu.Show();
+            }
 
 
         }
@@ -140,8 +175,29 @@ namespace FoodApp
 
         private void FrmDeliveryInfo_Load(object sender, EventArgs e)
         {
-
+            var bindingSource1 = new BindingSource();
+            bindingSource1.DataSource = PaymentMethod.GetPaymentMethod();
         }
+
+
+        private void cmbPaymentMethodGcashCC(object sender, EventArgs e)
+        {
+
+            if ((string)cmbPaymentMethodList.SelectedItem == gcash ||(string)cmbPaymentMethodList.SelectedItem == cc) 
+            {
+                txtAccNo.Show();
+                lblAccNo.Show();
+
+            
+
+            }
+            else
+            {
+                txtAccNo.Hide();
+            }
+        }
+
+      
     }
 }
     
