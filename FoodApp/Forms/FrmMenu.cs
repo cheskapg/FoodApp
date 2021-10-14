@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using FoodApp.Forms;
+
 
 namespace FoodApp
 {
@@ -41,7 +41,7 @@ namespace FoodApp
         {
             
             orderId = ((OrderID)e.ListItem).OrderId;
-             firstname = ((OrderID)e.ListItem).Firstname;
+            firstname = ((OrderID)e.ListItem).Firstname;
             e.Value = "Order # " + orderId + " Name: " + firstname;
             
         }
@@ -176,6 +176,10 @@ namespace FoodApp
             cmbQuantityMargherita.ResetText();
             cmbQuantityMargherita.SelectedIndex = -1;
             cmbOrderID.Focus();
+
+            qtyPizza = null;
+            save = Model.Customer.InsertOrderList(orderId, qtyPizza);
+            MessageBox.Show("Cart Cleared");
 
 
 

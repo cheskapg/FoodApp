@@ -74,11 +74,25 @@ namespace FoodApp.Model
             IRestResponse response = client.Execute(request);
             var orderid = JsonConvert.DeserializeObject<List<OrderID>>(response.Content);
             return orderid;
-                
 
         }
+    }
+    public class PaymentMethod 
+    { 
+        public string paymentAcc { get; set; }
+
+            public static List<PaymentMethod> GetPaymentMethod() 
+            {
+                var client = new RestClient("https://nacho.cheez/FoodApp/insert/GetPaymentMethodAcc.php");
+                client.Timeout = -1;
+                var request = new RestRequest(Method.GET);
+                IRestResponse response = client.Execute(request);
+                var PaymentAcc = JsonConvert.DeserializeObject<List<PaymentMethod>>(response.Content);
+                return PaymentAcc;
+            }
+    }
       
 
-    }
+    
 }
 
