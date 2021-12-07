@@ -13,9 +13,9 @@ namespace FoodApp
 {
     public partial class FrmMenu : Form
     {
-        public static string save, orderId, firstname, PizzaName, OrderIdNo, qty;
+        public static string save, orderId, firstname, MilkteaName, OrderIdNo, qty;
 
-        public string qtyPizza { get; private set; }
+        public string qtyMilktea { get; private set; }
 
         public FrmMenu()
         {
@@ -24,8 +24,8 @@ namespace FoodApp
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            pnlPizza.Hide();
-            pnlMenu.Show();
+            pnlMilktea.Show();
+         /*   pnlMenu.Show();*/
 
             cmbOrderID.DisplayMember = "OrderId" ;
             cmbOrderID.ValueMember = "OrderId";
@@ -33,10 +33,21 @@ namespace FoodApp
             bindingSource1.DataSource = OrderID.GetOrderID();
             cmbOrderID.DataSource = bindingSource1;
             cmbOrderID.SelectedItem = null;
+
+
+            /*
+                        dgMenuOrder.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+                        dgMenuOrder.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;*/
+            //LoadOrderList();
+
+
         }
 
 
+        int TaroTotal, ChocoTotal, GreenTotal, JavaTotal, TotalPrice;
+        
 
+                          
         private void cmbOrderFormat(object sender, ListControlConvertEventArgs e)
         {
             
@@ -45,29 +56,32 @@ namespace FoodApp
             e.Value = "Order # " + orderId + " Name: " + firstname;
             
         }
-        private void btnBacktoMenu_Click(object sender, EventArgs e)
+        private void btnBacktoMenu_Click(object sender, EventArgs e) 
         {
-            pnlPizza.Hide();
-            pnlMenu.Show();
-            pnlMenu.BringToFront();
+
+            this.Close();
+
+
+
         }
 
-        private void btnPizzactg_Click(object sender, EventArgs e)
+/*        private void btnPizzactg_Click(object sender, EventArgs e)
         {
-            pnlPizza.Show();
+            pnlMilktea.Show();
             pnlMenu.Hide();
-            pnlPizza.BringToFront();
-        }
+            pnlMilktea.BringToFront();
+        }*/
 
         private void btnCancelOrder_Click(object sender, EventArgs e)
         {
             ClearCart();
+
         }
 
         private void btnPlaceOrder_Click(object sender, EventArgs e)
         {
 
-
+            qtyMilktea = lblOrderList.Text;
             if (cmbOrderID.SelectedItem == null)
             {
                 string OrderError = "Please Select Customer from List";
@@ -76,114 +90,295 @@ namespace FoodApp
             }
             else
             {
+                save = Model.Customer.InsertOrderList(orderId, qtyMilktea);
                 string orderPlaced = "Your Order Has been Placed \n        Thank You";
                 MessageBox.Show(orderPlaced);
             }
         }
 
-        private void btnBackToMain_Click(object sender, EventArgs e)
+
+        private void btnFinal_Click(object sender, EventArgs e)
         {
-            this.Close();
+            /* if (cmbQuantityGreen.SelectedItem == null || cmbQuantityChoco.SelectedItem == null || cmbQuantityJava.SelectedItem || null && cmbQuantityTaro.SelectedItem == null)
+             {
+                 MessageBox.Show("Please Input Quantity");
+             }*//*
+
+            if (chkTaroPrl.Checked && cmbQuantityTaro.SelectedIndex != -1)
+            {
+                MilkteaName = "TaroPEARL";
+                TaroTotal = int.Parse(cmbQuantityTaro.SelectedItem.ToString()) * 45;
+                lblPrice.Text = TaroTotal.ToString();
+                qtyMilktea += "qty: " + cmbQuantityTaro.SelectedItem + "-" + MilkteaName + "\n";
+                
+            }
+            if (chkTaroPrl.Checked == false && cmbQuantityTaro.SelectedIndex != -1)
+            {
+                MilkteaName = "TaroNOPRL";
+                TaroTotal = int.Parse(cmbQuantityTaro.SelectedItem.ToString()) * 30;
+                lblPrice.Text = TaroTotal.ToString();
+                qtyMilktea += "qty: " + cmbQuantityTaro.SelectedItem + "-" + MilkteaName + "\n";
+              
+            }
+
+                *//* Green*//*
+            if (chkGreenPrl.Checked && cmbQuantityGreen.SelectedIndex!= -1)
+            {
+                GreenTotal = int.Parse(cmbQuantityGreen.SelectedItem.ToString()) * 55;
+                lblPrice.Text = GreenTotal.ToString();
+                MilkteaName = "GreenPEARL";
+                qtyMilktea += "qty: " + cmbQuantityGreen.SelectedItem + "-" + MilkteaName + "\n";
+                
+
+            }
+            if (chkGreenPrl.Checked == false && cmbQuantityGreen.SelectedIndex != -1)
+            {
+                MilkteaName = "GreenAppleNOPRL";
+*//*                GreenTotal = int.Parse(cmbQuantityGreen.SelectedItem.ToString()) * 40;
+*//*                lblPrice.Text = GreenTotal.ToString();
+                qtyMilktea += "qty: " + cmbQuantityGreen.SelectedItem + "-" + MilkteaName + "\n";
+            
+            }
+
+            if (chkChocoPrl.Checked && cmbQuantityChoco.SelectedIndex!= -1)
+            {
+                ChocoTotal = int.Parse(cmbQuantityChoco.SelectedItem.ToString()) * 65;
+                lblPrice.Text = ChocoTotal.ToString();
+                MilkteaName = "ChocomaltPEARL";
+                qtyMilktea += "qty: " + cmbQuantityChoco.SelectedItem + "-" + MilkteaName + "\n";
+   
+            }
+            if (chkChocoPrl.Checked = false && cmbQuantityChoco.SelectedIndex != -1)
+            {
+                MilkteaName = "ChocomaltNOPRL";
+                ChocoTotal = int.Parse(cmbQuantityChoco.SelectedItem.ToString()) * 50;
+                lblPrice.Text += ChocoTotal.ToString();
+                qtyMilktea += "qty: " + cmbQuantityChoco.SelectedItem + "-" + MilkteaName + "\n";
+       
+        
+            }
+            if (chkJavaPrl.Checked && cmbQuantityJava.SelectedIndex != -1)
+            {
+                JavaTotal = int.Parse(cmbQuantityJava.SelectedItem.ToString()) * 75;
+                lblPrice.Text = JavaTotal.ToString();
+                MilkteaName = "JavaPEARL";
+                qtyMilktea += "qty: " + cmbQuantityJava.SelectedItem + "-" + MilkteaName + "\n";
+  
+            }
+            if (chkJavaPrl.Checked == false && cmbQuantityJava.SelectedIndex != -1)
+            {
+                MilkteaName = "JavaNOPRL";
+                JavaTotal = int.Parse(cmbQuantityJava.SelectedItem.ToString()) * 60;
+                lblPrice.Text = JavaTotal.ToString();
+                qtyMilktea = "qty: " + cmbQuantityJava.SelectedItem + "-" + MilkteaName + "\n";
+        
+            }
+
+*/
+
+            /*final cart */
+            /*            lblOrderList.Text = qtyMilktea + " \n";
+                        TotalPrice = GreenTotal + JavaTotal + ChocoTotal + TaroTotal;
+                        lblPrice.Text = TotalPrice.ToString();*/
+
+
+
+
+            /*-------------------SELECT CUSTOMER ----------------------------*/
+
+
+            /*            if (cmbOrderID.SelectedItem == null)
+                        {
+                            string OrderError = "Please Select Customer from List";
+                            MessageBox.Show(OrderError);
+                            cmbOrderID.Focus();
+
+
+                            TotalPrice = GreenTotal + JavaTotal + ChocoTotal + TaroTotal;
+                            lblPrice.Text = TotalPrice.ToString();
+
+
+                        }
+                        else
+                        {
+
+                            MessageBox.Show(save);
+                        }
+                    }
+                */
         }
-
-
-
 
 
         /*++++++++++++++++++++++++++++MENU LISTS+++++++++++++++++++++++++++++++++*/
 
 
 
-        private void btnMexicano_Click(object sender, EventArgs e)
+        private void btnTaro_Click(object sender, EventArgs e)
         {
-            PizzaName = "Mexicano";
-            qtyPizza += "qty: " + cmbQuantityMexican.SelectedItem + "-" + PizzaName + "\n";
-            if (cmbOrderID.SelectedItem == null)
+
+            if (chkTaroPrl.Checked && cmbQuantityTaro.SelectedIndex != -1)
+            {   
+                MilkteaName = "TaroPEARL";
+                TaroTotal += int.Parse(cmbQuantityTaro.SelectedItem.ToString()) * 45;
+                qtyMilktea = "qty: " + cmbQuantityTaro.SelectedItem + "-" + MilkteaName + "\n";
+                lblOrderList.Text += qtyMilktea;
+                TotalPrice = GreenTotal + JavaTotal + ChocoTotal + TaroTotal;
+                lblPrice.Text = TotalPrice.ToString();
+               
+
+                Refresh();
+
+
+            }
+            if (chkTaroPrl.Checked == false  && cmbQuantityTaro.SelectedIndex != -1)
+            {
+                MilkteaName = "TaroNOPRL";
+                TaroTotal += int.Parse(cmbQuantityTaro.SelectedItem.ToString()) * 30;
+                qtyMilktea = "qty: " + cmbQuantityTaro.SelectedItem + "-" + MilkteaName + "\n";
+                lblOrderList.Text += qtyMilktea;
+                TotalPrice = GreenTotal + JavaTotal + ChocoTotal + TaroTotal;
+                lblPrice.Text = TotalPrice.ToString();
+                Refresh();
+
+            }
+/*            if (cmbOrderID.SelectedItem == null)
             {
                 string OrderError = "Please Select Customer from List";
                 MessageBox.Show(OrderError);
                 cmbOrderID.Focus();
+                Refresh();
 
             }
             else
             {
-                save = Model.Customer.InsertOrderList(orderId, qtyPizza);
+                save = Model.Customer.InsertOrderList(orderId, qtyMilktea);
                 MessageBox.Show(save);
-            }
+            }*/
         }
-        private void btnHamNCheese_Click(object sender, EventArgs e)
+
+
+        private void btnChocoMalt_Click(object sender, EventArgs e)
         {
-            PizzaName = "HamNCheese";
-            qtyPizza += "qty: " + cmbQuantityHam.SelectedItem + "-"+ PizzaName + "\n";
-            if (cmbOrderID.SelectedItem == null)
+
+            
+            if (chkChocoPrl.Checked && cmbQuantityChoco.SelectedIndex != -1)
             {
-                string OrderError = "Please Select Customer from List";
-                MessageBox.Show(OrderError);
-                cmbOrderID.Focus();
+               
+
+                ChocoTotal += int.Parse(cmbQuantityChoco.SelectedItem.ToString()) * 75;
+              
+                MilkteaName = "ChocomaltPEARL";
+                qtyMilktea = "qty: " + cmbQuantityChoco.SelectedItem + "-" + MilkteaName + "\n";
+                lblOrderList.Text += qtyMilktea;
+                TotalPrice = GreenTotal + JavaTotal + ChocoTotal + TaroTotal;
+                lblPrice.Text = TotalPrice.ToString();
+               
+                Refresh();
 
             }
-            else
+            if (chkChocoPrl.Checked == false && cmbQuantityChoco.SelectedIndex != -1)
             {
-                save = Model.Customer.InsertOrderList(orderId, qtyPizza);
-                MessageBox.Show(save);
+                MilkteaName = "ChocomaltNOPRL";
+                ChocoTotal += int.Parse(cmbQuantityChoco.SelectedItem.ToString()) * 60;
+                qtyMilktea = "qty: " + cmbQuantityChoco.SelectedItem + "-" + MilkteaName + "\n";
+                lblOrderList.Text += qtyMilktea;
+                TotalPrice = GreenTotal + JavaTotal + ChocoTotal + TaroTotal;
+                lblPrice.Text = TotalPrice.ToString();
+                Refresh();
+
             }
+
         }
-        private void btnGehalo_Click(object sender, EventArgs e)
+        private void btnJava_Click(object sender, EventArgs e)
         {
-            PizzaName = "Gehalo";
-            qtyPizza += "qty: " + cmbQuantityGehalo.SelectedItem + "-" + PizzaName + "\n";
-            if (cmbOrderID.SelectedItem == null)
+
+            if (chkJavaPrl.Checked && cmbQuantityJava.SelectedIndex!= -1)
             {
-                string OrderError = "Please Select Customer from List";
-                MessageBox.Show(OrderError);
-                cmbOrderID.Focus();
+                JavaTotal += int.Parse(cmbQuantityJava.SelectedItem.ToString()) * 65;
+                MilkteaName = "JavaPEARL";
+                qtyMilktea = "qty: " + cmbQuantityJava.SelectedItem + "-" + MilkteaName + "\n";
+                lblOrderList.Text += qtyMilktea;
+                TotalPrice = GreenTotal + JavaTotal + ChocoTotal + TaroTotal;
+                lblPrice.Text = TotalPrice.ToString();
+
+                Refresh();
+
+
 
             }
-            else
+            if (chkJavaPrl.Checked == false && cmbQuantityJava.SelectedIndex != -1)
             {
-                save = Model.Customer.InsertOrderList(orderId, qtyPizza);
-                MessageBox.Show(save);
+                MilkteaName = "JavaNOPRL";
+                JavaTotal += int.Parse(cmbQuantityJava.SelectedItem.ToString()) * 50;
+                qtyMilktea = "qty: " + cmbQuantityJava.SelectedItem + "-" + MilkteaName + "\n";
+                lblOrderList.Text += qtyMilktea;
+                TotalPrice = GreenTotal + JavaTotal + ChocoTotal + TaroTotal;
+                lblPrice.Text = TotalPrice.ToString();
+
+                Refresh();
+
             }
+
         }
-        private void btnMargherita_Click(object sender, EventArgs e)
+        private void btnGreen_Click(object sender, EventArgs e)
         {
-            PizzaName = "Margherita";
-            qtyPizza += "qty: " + cmbQuantityMargherita.SelectedItem + "-" + PizzaName + "\n";
-            if (cmbOrderID.SelectedItem == null)
+            if (chkGreenPrl.Checked && cmbQuantityGreen.SelectedIndex != -1)
             {
-                string OrderError = "Please Select Customer from List";
-                MessageBox.Show(OrderError);
-                cmbOrderID.Focus();
+
+                GreenTotal += int.Parse(cmbQuantityGreen.SelectedItem.ToString()) * 55;
+                MilkteaName = "GreenPEARL";
+                qtyMilktea = "qty: " + cmbQuantityGreen.SelectedItem + "-" + MilkteaName + "\n";
+                lblOrderList.Text += qtyMilktea;
+                TotalPrice = GreenTotal + JavaTotal + ChocoTotal + TaroTotal;
+                lblPrice.Text = TotalPrice.ToString();
+
+
+                Refresh();
+
 
             }
-            else
+            if (chkGreenPrl.Checked == false && cmbQuantityGreen.SelectedIndex != -1)
+
             {
-                save = Model.Customer.InsertOrderList(orderId, qtyPizza);
-                MessageBox.Show(save);
+                MilkteaName = "GreenAppleNOPRL";
+                GreenTotal += int.Parse(cmbQuantityGreen.SelectedItem.ToString()) * 40; 
+                qtyMilktea = "qty: " + cmbQuantityGreen.SelectedItem + "-" + MilkteaName + "\n";
+                lblOrderList.Text += qtyMilktea;
+                TotalPrice = GreenTotal + JavaTotal + ChocoTotal + TaroTotal;
+                lblPrice.Text = TotalPrice.ToString();
+
+
+                Refresh();
+
             }
+
         }
 
         /*+++++++++++++++++++++MENU LIST END++++++++++++++++++++++++++++++++++++*/
 
         private void ClearCart()
         {
-            cmbQuantityHam.ResetText();
-            cmbQuantityHam.SelectedIndex = -1;
-            cmbQuantityGehalo.ResetText();
-            cmbQuantityGehalo.SelectedIndex = -1;
-            cmbQuantityMexican.ResetText();
-            cmbQuantityMexican.SelectedIndex = -1;
-            cmbQuantityMargherita.ResetText();
-            cmbQuantityMargherita.SelectedIndex = -1;
+            cmbQuantityChoco.ResetText();
+            cmbQuantityChoco.SelectedIndex = -1;
+            cmbQuantityJava.ResetText();
+            cmbQuantityJava.SelectedIndex = -1;
+            cmbQuantityTaro.ResetText();
+            cmbQuantityTaro.SelectedIndex = -1;
+            cmbQuantityGreen.ResetText();
+            cmbQuantityGreen.SelectedIndex = -1;
             cmbOrderID.Focus();
 
-            qtyPizza = null;
-            save = Model.Customer.InsertOrderList(orderId, qtyPizza);
+            lblPrice.Text = "0";
+            lblOrderList.Text = null;
+            qtyMilktea = null;
+            save = Model.Customer.InsertOrderList(orderId, qtyMilktea);
             MessageBox.Show("Cart Cleared");
 
-
-
-
         }
+
+        //internal void LoadOrderList()
+        //{
+        //    dgMenuOrder.DataSource = MenuOrderList.GetMenuOrder();
+        //}
     }
 }
