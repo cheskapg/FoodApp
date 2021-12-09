@@ -30,7 +30,6 @@ namespace FoodApp
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDeliveryInfo));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblAccNo = new System.Windows.Forms.Label();
@@ -68,16 +67,16 @@ namespace FoodApp
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Image = global::FoodApp.Properties.Resources.only_milktea_v2;
+            this.pictureBox1.Location = new System.Drawing.Point(-10, 11);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(546, 90);
+            this.pictureBox1.Size = new System.Drawing.Size(554, 95);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.lblAccNo);
             this.panel1.Controls.Add(this.txtAccNo);
             this.panel1.Controls.Add(this.txtOrderList);

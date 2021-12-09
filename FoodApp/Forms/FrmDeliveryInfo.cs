@@ -194,6 +194,7 @@ namespace FoodApp
             else
             {
                 txtAccNo.Hide();
+                lblAccNo.Hide();
             }
         }
 
