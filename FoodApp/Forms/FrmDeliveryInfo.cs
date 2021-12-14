@@ -175,8 +175,8 @@ namespace FoodApp
 
         private void FrmDeliveryInfo_Load(object sender, EventArgs e)
         {
-            var bindingSource1 = new BindingSource();
-            bindingSource1.DataSource = PaymentMethod.GetPaymentMethod();
+ /*           var bindingSource1 = new BindingSource();
+            bindingSource1.DataSource = PaymentMethod.GetPaymentMethod();*/
         }
 
 
