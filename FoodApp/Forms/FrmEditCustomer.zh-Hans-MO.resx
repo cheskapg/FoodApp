@@ -1,0 +1,1088 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="panel1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel1.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel1.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel1.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel1.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel1.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="panel1.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="panel1.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="panel1.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="panel1.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="panel1.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panel1.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panel1.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panel1.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panel1.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panel1.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblAccNo.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAccNo.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAccNo.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAccNo.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAccNo.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAccNo.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAccNo.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblAccNo.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblAccNo.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblAccNo.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblAccNo.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblAccNo.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblAccNo.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblAccNo.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblAccNo.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblAccNo.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblAccNo.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblAccNo.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtAccNo.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAccNo.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAccNo.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAccNo.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAccNo.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAccNo.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAccNo.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtAccNo.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtAccNo.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtAccNo.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtAccNo.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtAccNo.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtAccNo.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtAccNo.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtAccNo.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtAccNo.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtAccNo.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtAccNo.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtOrderList.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOrderList.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOrderList.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOrderList.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOrderList.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOrderList.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOrderList.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtOrderList.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtOrderList.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtOrderList.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtOrderList.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtOrderList.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtOrderList.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtOrderList.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtOrderList.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtOrderList.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtOrderList.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtOrderList.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancel.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancel.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancel.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancel.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancel.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnCancel.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnCancel.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnCancel.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnCancel.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnCancel.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnCancel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtContactNo.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactNo.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactNo.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactNo.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactNo.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactNo.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactNo.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtContactNo.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtContactNo.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtContactNo.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtContactNo.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtContactNo.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtContactNo.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtContactNo.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtContactNo.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtContactNo.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtContactNo.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtContactNo.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label6.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label6.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label6.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label6.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label6.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label6.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label6.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label6.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label6.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label6.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label6.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label6.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label6.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label6.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label6.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label6.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label6.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label6.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnSaveDeliveryInfo.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveDeliveryInfo.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveDeliveryInfo.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveDeliveryInfo.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveDeliveryInfo.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveDeliveryInfo.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveDeliveryInfo.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnSaveDeliveryInfo.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnSaveDeliveryInfo.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnSaveDeliveryInfo.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnSaveDeliveryInfo.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnSaveDeliveryInfo.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnSaveDeliveryInfo.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnSaveDeliveryInfo.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnSaveDeliveryInfo.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnSaveDeliveryInfo.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnSaveDeliveryInfo.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnSaveDeliveryInfo.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cmbPaymentMethodList.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbPaymentMethodList.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbPaymentMethodList.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbPaymentMethodList.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbPaymentMethodList.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbPaymentMethodList.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbPaymentMethodList.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cmbPaymentMethodList.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cmbPaymentMethodList.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cmbPaymentMethodList.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cmbPaymentMethodList.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cmbPaymentMethodList.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cmbPaymentMethodList.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cmbPaymentMethodList.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cmbPaymentMethodList.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cmbPaymentMethodList.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cmbPaymentMethodList.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cmbPaymentMethodList.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cmbBarangayList.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBarangayList.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBarangayList.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBarangayList.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBarangayList.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBarangayList.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbBarangayList.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cmbBarangayList.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cmbBarangayList.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cmbBarangayList.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cmbBarangayList.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cmbBarangayList.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cmbBarangayList.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cmbBarangayList.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cmbBarangayList.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cmbBarangayList.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cmbBarangayList.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cmbBarangayList.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label5.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label5.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label5.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label5.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label5.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label5.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label5.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label5.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label5.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label5.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label5.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label5.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label5.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label5.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label5.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label5.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label5.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label5.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label4.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label4.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label4.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label4.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label4.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label4.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label4.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label4.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label4.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label4.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label4.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label4.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label4.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label4.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label4.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label4.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label4.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label4.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label3.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label3.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label3.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label3.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label3.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtStreetAddress.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetAddress.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetAddress.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetAddress.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetAddress.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetAddress.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetAddress.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtStreetAddress.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtStreetAddress.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtStreetAddress.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtStreetAddress.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtStreetAddress.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtStreetAddress.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtStreetAddress.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtStreetAddress.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtStreetAddress.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtStreetAddress.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtStreetAddress.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtFirstName.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtFirstName.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtFirstName.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtFirstName.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtFirstName.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtFirstName.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtFirstName.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtFirstName.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtFirstName.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtFirstName.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtFirstName.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtFirstName.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label2.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label2.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label2.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label2.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label2.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label2.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label2.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label2.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label2.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label2.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label1.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label1.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label1.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label1.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label1.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtLastName.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastName.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastName.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastName.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastName.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastName.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastName.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtLastName.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtLastName.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtLastName.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtLastName.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtLastName.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtLastName.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtLastName.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtLastName.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtLastName.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtLastName.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtLastName.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pictureBox1.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pictureBox1.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pictureBox1.Error3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pictureBox1.Error4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pictureBox1.Error5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pictureBox1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="pictureBox1.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="pictureBox1.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="pictureBox1.IconAlignment3" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="pictureBox1.IconAlignment4" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="pictureBox1.IconAlignment5" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="pictureBox1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.IconPadding3" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.IconPadding4" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.IconPadding5" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+</root>

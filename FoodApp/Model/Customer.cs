@@ -59,6 +59,36 @@ namespace FoodApp.Model
             return customer;
         }
 
+        public static string EditCustomer (Customer editCustomer)
+        {
+            var client = new RestClient("https://nacho.cheez/FoodApp/insert/EditOrderInfo.php");
+            client.Timeout = -1;
+            var request = new RestRequest(Method.POST);
+            request.AlwaysMultipartFormData = true;
+            request.AddParameter("OrderId", editCustomer.OrderId);
+            request.AddParameter("FirstName", editCustomer.Firstname);
+            request.AddParameter("LastName", editCustomer.LastName);
+            request.AddParameter("Barangay", editCustomer.Barangay);
+            request.AddParameter("StreetAddress", editCustomer.StreetAddress);
+            request.AddParameter("ContactNo", editCustomer.ContactNo);
+            request.AddParameter("PaymentMethod", editCustomer.PaymentMethod);
+            request.AddParameter("OrderList", editCustomer.OrderList);
+            IRestResponse response = client.Execute(request);
+            return (response.Content);
+        }
+
+        public static string DeleteOrder(string OrderId)
+        {
+            var client = new RestClient("https://nacho.cheez/FoodApp/insert/DeleteOrder.php");
+            client.Timeout = -1;
+            var request = new RestRequest(Method.POST);
+            request.AlwaysMultipartFormData = true;
+            request.AddParameter("OrderId", OrderId);
+            IRestResponse response = client.Execute(request);
+            return response.Content;
+        }
+
+
 
     }
 
@@ -77,36 +107,21 @@ namespace FoodApp.Model
 
         }
     }
-    public class PaymentMethod
-    {
-        public string paymentAcc { get; set; }
-
-        public static List<PaymentMethod> GetPaymentMethod()
+    /*    public class PaymentMethod
         {
-            var client = new RestClient("https://nacho.cheez/FoodApp/insert/GetPaymentMethodAcc.php");
-            client.Timeout = -1;
-            var request = new RestRequest(Method.GET);
-            IRestResponse response = client.Execute(request);
-            var PaymentAcc = JsonConvert.DeserializeObject<List<PaymentMethod>>(response.Content);
-            return PaymentAcc;
-        }
-    }
-    //public class MenuOrderList
-    //{
-    //    public string OrderId { get; set; }
+            public string paymentAcc { get; set; }
 
-    //       public static  MenuOrderList GetMenuOrder()
-    //        {
-    //            var client = new RestClient("https://nacho.cheez/FoodApp/insert/GetMenuOrder.php");
-    //            client.Timeout = -1;
-    //            var request = new RestRequest(Method.GET);
-    //            IRestResponse response = client.Execute(request);
-    //        var menuOrder = JsonConvert.DeserializeObject<MenuOrderList>(response.Content);
-    //        return menuOrder;
-
-
-
-    //    }
-    //}
+            public static List<PaymentMethod> GetPaymentMethod()
+            {
+                var client = new RestClient("https://nacho.cheez/FoodApp/insert/GetPaymentMethodAcc.php");
+                client.Timeout = -1;
+                var request = new RestRequest(Method.GET);
+                IRestResponse response = client.Execute(request);
+                var PaymentAcc = JsonConvert.DeserializeObject<List<PaymentMethod>>(response.Content);
+                return PaymentAcc;
+            }
+        }*/        
+    
 }
+
 

@@ -31,6 +31,8 @@ namespace FoodApp.Forms
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.dgCustomerOrders = new System.Windows.Forms.DataGridView();
             this.colOrderId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,11 +48,33 @@ namespace FoodApp.Forms
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnEdit);
+            this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.dgCustomerOrders);
             this.panel1.Location = new System.Drawing.Point(6, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1043, 478);
             this.panel1.TabIndex = 0;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(841, 446);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(94, 29);
+            this.btnEdit.TabIndex = 1;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(681, 446);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(94, 29);
+            this.btnDelete.TabIndex = 1;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // dgCustomerOrders
             // 
@@ -176,5 +200,7 @@ namespace FoodApp.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn colContactNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPaymentMethod;
         private System.Windows.Forms.DataGridViewTextBoxColumn colOrderList;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
