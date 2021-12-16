@@ -30,19 +30,30 @@ namespace FoodApp.Forms
         {
             var customer = Customer.GetCustomerOrder();
 
-            foreach (var ListCustomer in customer)
+            if (customer == null)
             {
-                dgCustomerOrders.Rows.Add(
-                    ListCustomer.OrderId,
-                    ListCustomer.Firstname,
-                    ListCustomer.LastName,
-                    ListCustomer.Barangay,
-                    ListCustomer.StreetAddress,
-                    ListCustomer.ContactNo,
-                    ListCustomer.PaymentMethod,
-                    ListCustomer.OrderList
-                    );
+                MessageBox.Show("No orders yet");
             }
+            else
+            {
+
+
+                foreach (var ListCustomer in customer)
+                {
+                    dgCustomerOrders.Rows.Add(
+                        ListCustomer.OrderId,
+                        ListCustomer.Firstname,
+                        ListCustomer.LastName,
+                        ListCustomer.Barangay,
+                        ListCustomer.StreetAddress,
+                        ListCustomer.ContactNo,
+                        ListCustomer.PaymentMethod,
+                        ListCustomer.OrderList
+                        );
+                }
+            }
+
+  
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
